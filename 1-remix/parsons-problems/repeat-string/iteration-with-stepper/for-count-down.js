@@ -23,8 +23,8 @@ const repeatString = (text = '', repetitions = 1) => {
   return repeatedText;
 };
 
-for (let count = repetitions; count > 0; count++ { // distractor
+/*for (let count = repetitions; count > 0; count++ { // distractor
 for (let count = repetitions; count === 0; count--) { // distractor
-for (let count = repetitions; count >= 0; count-) { // distractor
+for (let count = repetitions; count >= 0; count-) { // distractor*/
 
 

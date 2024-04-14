@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 console.log('- broken JS -');
 try {
     turtle = 4;
@@ -12,7 +12,7 @@ try {
 
 console.log('- throw new error -');
 try {
-    throw __;
+    throw new ReferenceError("Cannot access 'turtle' before initialization",);
 } catch (err) {
     console.error(err);
 

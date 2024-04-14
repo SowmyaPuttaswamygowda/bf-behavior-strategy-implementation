@@ -16,6 +16,12 @@
       return: text + recursedValue
 
 */
+/**
+ * 
+ * @param {string} [text=''] - The string to be repeated.Defaults to an empty string if not provided.
+ * @param {number} [repetitions=1] -The number of times the string should be repeated.Default to 1 if not provided.
+ * @returns {string} The resultng string after repetition.
+ */
 
 const repeatString = (text = '', repetitions = 1) => {
   if (repetitions === 0) {
@@ -27,6 +33,11 @@ const repeatString = (text = '', repetitions = 1) => {
   }
 };
 
-return oneRepetitionShort + text; // distractor
+/*return oneRepetitionShort + text; // distractor
 if (repetitions !== 0) { // distractor
-
+*/
+descibe('repeatString', () => {
+  test('hello,3 -> hellohellohello',() => {
+    expect(repeatString('hello',3)).toEqual('hellohellohello');
+  })
+})

@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 console.log('- broken JS -');
 try {
     const userAge = 12;
@@ -14,7 +14,7 @@ try {
 
 console.log('- throw new error -');
 try {
-    throw __;
+    throw new error( 'userAge is not iterable');
 } catch (err) {
     console.error(err);
 

@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 console.log('- broken JS -');
 try {
     let name;
@@ -12,7 +12,7 @@ try {
 
 console.log('- throw new error -');
 try {
-    throw __;
+    throw new TypeError("Cannot read property 'length' of undefined");
 } catch (err) {
     console.error(err);
 
