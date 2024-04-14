@@ -54,7 +54,7 @@ function mySol(array1, array2) {
 describe('testing addArrays()', function () {
   it('should properly handle example test case', function () {
     Test.assertSimilar(addArrays([1, 2], [4, 5]), [5, 7]);
-    Test.assertSimilar(
+    Test.assertSimilar(ad
       addArrays(['a'], ['b']),
       ['ab'],
       'Should work with strings as well',

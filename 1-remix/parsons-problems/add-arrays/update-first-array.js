@@ -1,8 +1,15 @@
 /* https://www.codewars.com/kata/reviews/58677f75395d91ce1d000576/groups/5d6a8a05c968e80001066720 */
 
 /* this exercise has 0 distractors */
+/**
+ * 
+ * @param {number} array1 ...
+ * @param {number} array2 ...
+ * 
+ * @returns {number} ...
+ */
 
-function addArrays(array1, array2) {
+export function addArrays(array1, array2) {
     var len = array1.length;
 
     if (len === array2.length) {
@@ -15,3 +22,4 @@ function addArrays(array1, array2) {
 
     throw new Error();
 }
+

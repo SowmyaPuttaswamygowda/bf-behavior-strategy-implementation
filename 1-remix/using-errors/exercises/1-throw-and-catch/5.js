@@ -11,7 +11,7 @@ try {
 
 console.log('- throw new error -');
 try {
-    throw __;
+    throw new error('ReferenceError', 'name fail');
 } catch (err) {
     console.error(err);
 

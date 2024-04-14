@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 console.log('- broken JS -');
 try {
     null();
@@ -9,9 +9,9 @@ try {
     console.error(err);
 }
 
-console.log('- throw new error -');
+console.log('throw new error');
 try {
-    throw __;
+    throw new TypeError('null is not a function');
 } catch (err) {
     console.error(err);
 

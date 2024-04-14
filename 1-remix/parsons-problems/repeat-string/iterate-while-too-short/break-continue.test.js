@@ -13,7 +13,7 @@
     return: the new repeated string
 
 */
-
+debugger;
 const repeatString = (text = '', repetitions = 1) => {
   const finalLength = text.length * repetitions;
   let repeatedText = '';
@@ -26,7 +26,19 @@ const repeatString = (text = '', repetitions = 1) => {
   return repeatedText;
 };
 
-continue; // distractor
+/*continue; // distractor
 if (repeatedText.length = finalLength) { // distractor
 while (false) { // distractor
-} // distractor
+} // distractor*/
+describe('remove exclamation marks from a string', () => {
+  it('Hello! -> Hello',() => {
+      expect(removeExclamationMarks('Hello!')).toEqual('Hello');
+  });
+
+  it('go! and come! -> go and come', () => {
+      expect(removeExclamationMarks('go! and come!')).toEqual('go and come');
+  });
+  it('hi!!!!!!!!!! -> hi',() => {
+      expect(removeExclamationMarks('hi!!!!!!!!!!')).toEqual('hi');
+  });
+});
