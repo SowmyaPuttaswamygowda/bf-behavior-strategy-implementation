@@ -9,6 +9,12 @@
  */
 
 // -------- your solutions --------
+const reverseStr1 = (str = '') => {
+    if (str === '') {
+        return str;
+    }
+    return str.split('').reverse().join('');
+};
 
 for (const solution of [secretSolution]) {
     // the main test suite for the function
@@ -22,7 +28,8 @@ for (const solution of [secretSolution]) {
         it('a string with all capital letters', () => {
             expect(solution('ASDF')).toEqual('FDSA');
         });
-        // write at least 5 more tests ...
+        
+        
     });
 }
 

@@ -10,6 +10,24 @@
  */
 
 // -------- your solutions --------
+const countUp = (num = 0) => {
+    const arr = [];
+    for (let i = 0; i <= num; i++) {
+        arr.push(i);
+    }
+
+    return arr;
+};
+
+const countUp2 =(num = 0) => {
+    const arr = [];
+    let i = 0;
+    while (i <= num) {
+        arr.push(i);
+        num--;
+    }
+    return arr;
+};
 
 for (const solution of [secretSolution]) {
     // the main test suite for the function
@@ -24,7 +42,15 @@ for (const solution of [secretSolution]) {
         it('1 -> [0, 1]', () => {
             expect(solution(1)).toEqual([0, 1]);
         });
-        // write at least 5 more tests ...
+        it('2 -> [0, 1, 2]', () => {
+            expect(solution(2)).toEqual([0, 1, 2]);
+        });
+        it('5 -> [0, 1, 2, 3, 4, 5]', () => {
+            expect(solution(5)).toEqual([0, 1, 2, 3, 4, 5]);
+        });
+        it('10 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]', () => {
+            expect(solution(10)).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+        });
     });
 }
 

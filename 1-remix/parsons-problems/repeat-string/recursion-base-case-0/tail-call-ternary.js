@@ -1,5 +1,7 @@
 /* 2 extra lines */
 
+import { getSupportInfo } from "prettier";
+
 /* parsons-collapse: recursion with base-case 0
 
   i'm using 0 as the base-case because that is the fewest possible repetitions
@@ -24,4 +26,4 @@ const repeatString = (text = '', repetitions = 1, repeated = '') =>
     : repeatString(text, repetitions - 1, repeated + text);
 
 ? '' // distractor
-: repeatString(text, repetitions - 1); // distractor
+: repeatString(text, repetitions - 1); // distract
